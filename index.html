@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Franklin:wght@200&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Final Programación 1 - Martin Vicens</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Productos</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" onclick="filtrarProductos(this.innerText)"
+              >Todos</a
+            >
+            <a
+              class="nav-link"
+              id="tata"
+              onclick="filtrarProductos(this.innerText)"
+              >Samsung</a
+            >
+            <a class="nav-link" onclick="filtrarProductos(this.innerText)"
+              >Xiaomi</a
+            >
+            <a class="nav-link" onclick="filtrarProductos(this.innerText)"
+              >Motorola</a
+            >
+            <h3 id="eventoCarrito" class="carritoMost">
+              🛒
+              <h5 id="cuentaCarrito" class="carritoCuenta"></h5>
+            </h3>
+            <p id="total" class="total"></p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="principalProductos" class="principal-productos"></section>
+    <section id="principalCarrito" class="principal-carrito"></section>
+    <section id="formulario" class="formulario"></section>
+    <section id="mostrarProducto" class="mostrar-producto"></section>
+
+    <img src="./images/" alt="" />
+
+    <main class="container">
+      <div class="card">
+        <div class="card-body textoBanner">
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </main>
+
+    <option value=""></option>
+
+    <script src="./productos.js"></script>
+    <script src="./index.js"></script>
+    <script src="./funciones.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
